@@ -1,0 +1,7 @@
+FROM:  指定基础镜像，dockerfile必须以FROM开头
+        ex: FROM tomcat:9-jre8
+RUN: 执行命令行命令，比如echo,ll,ls等
+        ex: RUN echo "Hello Docker Tomcat" >> /usr/local/tomcat/webapps/ROOT/index.jsp
+        
+WORKDIR: 进入工作目录，作用类似与 RUN cd <路径>
+        ex: WORKDIR /usr/local
