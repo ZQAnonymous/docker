@@ -1,0 +1,16 @@
+docker pull 镜像名：标签；------------------------拉去镜像
+docker run -it ubuntu:16.04 bash；---------------运行镜像（结束后不删除镜像）
+docker run -it --rm ubuntu:16.04 bash；----------运行镜像（结束后删除镜像）
+
+docker images；----------------------------------列出镜像
+docker system df；-------------------------------查看镜像、容器、数据卷占用的空间
+docker image rm 镜像名/image ID；-----------------删除镜像
+docker rmi $(docker images -q)；-----------------删除所有镜像
+docker image rm $(docker image ls -q redis)；----删除仓库名为redis的镜像
+docker image prune；-----------------------------删除所有不使用的镜像
+
+docker ps -a；-----------------------------------列出所有容器
+docker stop $(docker ps -aq)；-------------------停止所有容器
+docker rm $(docker ps -aq)；---------------------删除所有容器
+docker container prune -f；----------------------删除所有停止的容器
+
