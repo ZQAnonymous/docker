@@ -15,3 +15,5 @@ docker rm $(docker ps -aq)；---------------------删除所有容器
 docker container prune -f；----------------------删除所有停止的容器
 
 docker exec -it 容器ID bash；--------------------以交互的方式进入容器
+docker build -t 镜像名：标签 .--------------------构建自己的容器
+      ex:  docker build -t mytomcat:v1 .         .必须
