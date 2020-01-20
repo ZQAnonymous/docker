@@ -19,4 +19,4 @@ docker build -t 镜像名：标签 .--------------------构建自己的容器
       ex:  docker build -t mytomcat:v1 .         .必须
 
 
-docker 容器ID restart ----------------------------容器重启
+docker restart 容器ID----------------------------容器重启
