@@ -20,3 +20,6 @@ docker build -t 镜像名：标签 .--------------------构建自己的容器
 
 
 docker restart 容器ID----------------------------容器重启
+
+
+docker run -it --name myubuntu -d ubuntu:16.04 bash；--------------- --name重命名容器名称，-d以守护态进程运行镜像
