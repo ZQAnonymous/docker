@@ -5,3 +5,9 @@ RUN: 执行命令行命令，比如echo,ll,ls等
         
 WORKDIR: 进入工作目录，作用类似与 RUN cd <路径>
         ex: WORKDIR /usr/local
+
+COPY: 复制文件到指定目录
+        ex: COPY ./package.json 指定的路径
+        
+EXPOSE: 暴露指定端口
+        ex: EXPOSE 8080
