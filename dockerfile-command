@@ -10,4 +10,5 @@ COPY: 复制文件到指定目录
         ex: COPY ./package.json 指定的路径
         
 EXPOSE: 暴露指定端口
-        ex: EXPOSE 8080
+        ex: EXPOSE 8080 8081 8082
+               docker run -P tomcat
