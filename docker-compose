@@ -1,0 +1,4 @@
+docker-compose up --------------------运行当前目录的docker-compose.yml文件
+docker-compose down ------------------停止当前运行的docker-compose
+docker-compose -f 路径文件 ------------运行指定路径的docker-compose.yml文件
+docker-compose up -d -----------------以守护状态运行当前目录的docker-compose.yml文件
