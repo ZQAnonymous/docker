@@ -10,3 +10,13 @@ docker volume create 数据卷名-------------------------- 创建一个数据�
 docker volume ls---------------------------------------显示数据卷
 docker volume inspect 数据卷名--------------------------查看数据卷的额信息
 docker volume rm 数据卷名-------------------------------删除数据卷
+
+
+
+
+// 配置mysql 
+docker run -p 8085:3306 --name mysql 
+      -v /usr/local/docker/mysql/conf/:/etc/mysql 
+      -v /usr/local/docker/mysql/data/:/var/lib/mysql 
+      -v /usr/local/docker/mysql/logs/:/var/log/mysql 
+      -e MYSQL_ROOT_PASSWORD=root -d mysql:5.7.22   
